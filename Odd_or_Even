@@ -1,0 +1,41 @@
+/* ODD OR EVEN */
+
+//BY % operator
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		String res = (n%2==0)? "Even" : "Odd";
+		System.out.println(res);
+	}
+}
+
+//BY BITWISE &
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		String res = ((n & 1)==0)? "Even" : "Odd";
+		System.out.println(res);
+	}
+}
+
+//BY MATH
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		String res = (((n/2)*2)==n) ? "Even" : "Odd";
+		System.out.println(res);
+	}
+}
