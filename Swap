@@ -1,0 +1,47 @@
+//Traditional
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		int temp = a;
+		a = b;
+		b = temp;
+		System.out.print(a+" "+b);
+	}
+}
+
+// Math
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();// 10
+		int b = sc.nextInt();// 5
+		a = a + b;
+		b = a - b;
+		a = a - b;
+		System.out.print(a+" "+b);
+	}
+}
+
+//By bit
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();// 10
+		int b = sc.nextInt();// 5
+		a = a ^ b;
+		b = a ^ b;
+		a = a ^ b;
+		System.out.print(a+" "+b);
+	}
+}
